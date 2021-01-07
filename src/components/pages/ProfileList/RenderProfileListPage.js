@@ -2,22 +2,30 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const RenderProfileListPage = props => (
-  <div>
-    <p>
-      <Link to="/">Home</Link>
-    </p>
-    {props.data.map(item => (
-      <figure key={item.id}>
-        <img src={item.avatarUrl} alt={item.name} />
-        <figcaption>
-          <h3>{item.name}</h3>
-        </figcaption>
-      </figure>
-    ))}
-  </div>
-);
+const RenderProfileListPage = props => {
+  console.log(props);
 
+  return (
+    <div>
+      <p>
+        <Link to="/">Home</Link>
+      </p>
+      {props.data.map(item => (
+        <figure key={item.id}>
+          <img
+            style={{ height: '5em' }}
+            width="auto"
+            src={item.avatarUrl}
+            alt={Object.keys(item)}
+          />
+          <figcaption>
+            <h3>{item.name}</h3>
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  );
+};
 export default RenderProfileListPage;
 
 // Don't forget your prop types! It will save you a lot of debugging headache as you add more features.

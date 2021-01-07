@@ -1,0 +1,141 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+.mapboxgl-popup-content{
+  font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+  padding: 1px;
+}
+
+
+.tooltip{
+
+min-width: 15vw;
+min-height: 10vh;
+border-radius: 10px;
+background-color: white;
+border: 1px black solid;
+top: 0;
+padding-left: 22.5px;
+padding-right: 22.5px;
+
+}
+
+.pricesContainer{
+    display: flex;
+    padding: 1.5vh 0vw;
+    justify-content: space-between;
+    height: 42.5px;
+
+}
+
+.backButton span svg{
+
+height: 50px;
+width: 50px;
+color: rgb(29, 133, 122);
+margin-top: 10px;
+margin-bottom: 5px;
+}
+
+.mapboxgl-ctrl-bottom-center{
+display: flex;
+    justify-content: space-evenly;
+    bottom: 9%;
+    position: absolute;
+    width: 100%;
+
+}
+
+.mapboxgl-ctrl-geocoder{
+
+max-width: unset;
+width: 60%;
+}
+
+.mapboxgl-ctrl-geocoder--icon-search {
+
+width: 5%;
+    height: auto;
+
+
+}
+
+.mapboxgl-ctrl-geocoder--input{
+      height: 2em;
+    width: 100%;
+    padding-left: 7.5%;
+    font-size: x-large;
+}
+
+.searchButton{
+
+   background-color: #CD5521;
+  border: solid 1px black;
+  font-size: 2rem;
+  font-weight: 750;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
+
+.searchButton:hover{
+
+  background-color: #ff4d00;
+  transition: all 0.25s;
+}
+
+
+.selectedDest{
+
+  padding-top: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.divider{
+  border-bottom: solid 1px black;
+margin: 2vh 0 2vh 0;}
+
+
+.addDest{
+background-color: #3B2798;
+font-weight: bold;
+width: 30%;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+padding: 25px;
+margin-left: auto;
+color: white;
+margin-right: 0;}
+
+.addDest:hover{
+  background-color: #6746fa;
+  transition: all 0.25s;
+}
+
+.ant-list-item.itineraryThumbnail{
+cursor: pointer;
+background: linear-gradient(#39E0AE, #22C04A);
+min-height: 30vh;
+border-radius: 1em;
+font-size: 1.5em;
+padding-left: 2.5vw;
+padding-bottom: 2.5vh;
+overflow: visible;
+}
+.itineraryThumbnail:hover{
+background: linear-gradient(#43fbc4, #33ff66);
+
+}

@@ -15,13 +15,14 @@ const LoginContainer = () => {
       registration: {
         // there is more we can do to handle some errors here.
       },
-      features: { registration: false },
+      features: { registration: true },
       // turning this feature on allows your widget to use Okta for user registration
-      logo: 'path-to-your-logo',
+      logo:
+        'https://i.pinimg.com/736x/05/79/5a/05795a16b647118ffb6629390e995adb.jpg',
       // add your custom logo to your signing/register widget here.
       i18n: {
         en: {
-          'primaryauth.title': 'Welcome to Labs Basic SPA Please sign in',
+          'primaryauth.title': 'Welcome, Traveler, please sign in.',
           // change title for your app
         },
       },
@@ -42,6 +43,7 @@ const LoginContainer = () => {
          */
       },
       err => {
+        console.log(err);
         throw err;
       }
     );

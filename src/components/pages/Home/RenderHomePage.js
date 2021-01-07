@@ -1,16 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { Button } from '../../common';
 
 function RenderHomePage(props) {
   const { userInfo, authService } = props;
   return (
     <div>
-      <h1>Hi {userInfo.name} Welcome to Labs Basic SPA</h1>
+      <Redirect to="/itineraries" />
+
+      <h1>Hi {userInfo.name} welcome to Labs Basic SPA/</h1>
       <div>
+        <p>This is a fairly typical example of nothing. uwu</p>
         <p>
-          This is an example of a common example of how we'd like for you to
-          approach components.
+          <Link to="/itineraries">Your Itineraries</Link>
         </p>
         <p>
           <Link to="/profile-list">Profiles Example</Link>
